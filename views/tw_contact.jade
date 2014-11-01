@@ -1,0 +1,94 @@
+extends layout
+
+block mainNav
+    h1
+      a(href='tw_01.html') back
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      a(href='tw_new1.html') what's new 
+      br
+      br
+      | contact
+
+block mainContent
+    table(width='650', border='0', cellspacing='0', cellpadding='0')
+      tbody
+        tr
+          th(height='225', align='left', valign='bottom', scope='col')
+            h3
+              | inquiries:
+            h3.gray
+        tr
+          td(height='300')
+            form#form1(action='http://formmail.dreamhost.com/cgi-bin/formmail.cgi', method='post', name='form1')
+              input(type='hidden', name='recipient', value='terry@terryware.net')
+              input(type='hidden', name='subject', value='inquiries')
+              input(type='hidden', name='redirect', value='http://www.terryware.net/tw_contact.html')
+              table(width='583', cellpadding='0', cellspacing='0')
+                tbody
+                  tr
+                    td(width='40', height='18')
+                      br
+                    td(width='537', height='18')  
+                  tr
+                    td(width='40', height='18')  
+                    td(width='537', height='18')  
+                  tr
+                    td(width='40', height='18')  
+                    td(width='537', height='18')
+                      label(for='CoustomerName')
+                        span.style1 name
+                  tr
+                    td(width='40', height='18')  
+                    td(width='537', height='18')
+                      label(for='CoustomerName')
+                      input#CoustomerName(name='CoustomerName', type='text', size='51', maxlength='50')
+                  tr
+                    td(width='40', height='18')  
+                    td(width='537', height='18')  
+                  tr
+                    td(width='40', height='18')  
+                    td(width='537', height='18')
+                      label(for='EmailAddress')
+                        span.style1 email address
+                  tr
+                    td(width='40', height='18')  
+                    td(width='537', height='18')
+                      label(for='EmailAddress')
+                      input#EmailAddress(name='EmailAddress', type='text', size='51', maxlength='50')
+                  tr
+                    td(width='40', height='18')  
+                    td(width='537', height='18')  
+                  tr
+                    td(width='40', height='18')  
+                    td(width='537', height='18')
+                      label(for='Comments')
+                        span.style1 comments
+                  tr
+                    td(width='40', height='20')  
+                    td(width='537', height='20')
+                      label(for='Comments')
+                      textarea#Comments(name='Comments', cols='37', rows='4')
+                  tr
+                    td(width='40', height='18')  
+                    td(width='537', height='18')  
+                  tr
+                    td(width='40', height='18')  
+                    td(width='537', height='18')
+                      span.style1 please fill all 3 areas first, then click  submit once
+                  tr
+                    td(width='40', height='18')  
+                    td(width='537', height='18')
+                      span.style1                                                  - thank you
+                  tr
+                    td(width='40', height='18')  
+                    td(width='537', height='18')
+                      label(for='Sumit')
+                      input#Sumit(type='submit', name='Sumit', value='submit')
+                      span.style1

@@ -1,0 +1,23 @@
+extends layout
+
+block mainNav
+  h1
+    | #{desc[0]}
+    br
+    br
+    | #{desc[1]}
+    br
+    | #{desc[2]}
+    br
+    br
+    include ./partials/carousel
+    br
+    br
+    br
+    a(href='tw_new1.html') what's new 
+    br
+    br
+    a(href='tw_contact.html') contact
+
+block mainContent
+  img(src='images/tw_' + Formatter.pad(thisNumber,padding) + '.jpg', width='650', height='575')

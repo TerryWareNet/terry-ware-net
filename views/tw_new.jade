@@ -1,0 +1,19 @@
+extends layout
+
+block mainNav
+    h1
+      a(href='tw_01.html') back
+      br
+      br
+      img(src='images/f_i.gif', width='375', height='100')
+      br
+      br
+      |  what's new     
+      include partials/carousel
+      br
+      br
+      a(href='tw_contact.html') contact
+
+block mainContent
+  a(href=desc[0], target='blank')
+    img(src='images/tw_new' + thisNumber + '.jpg', width='650', height='575')
