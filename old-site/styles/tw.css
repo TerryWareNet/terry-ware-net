@@ -143,6 +143,7 @@ h3 {
 	}
 	#mainNav > h1 {
 		padding-right: 0;
+		font-size: 13px;
 	}
 	#mainContent, #footer {
 		margin-left: 0;
@@ -173,6 +174,6 @@ h3 {
 	#footer > img {
 		width: auto;
 		position: absolute;
-		right: 0;
+		right: 40px;
 	}
 }
