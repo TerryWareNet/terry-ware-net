@@ -25,8 +25,8 @@ app.post '/email', (req, res, next) ->
     text += "#{field}: #{value}\n"
 
   transporter.sendMail
-    from: 'mike@terryware.net'
-    to: 'mike@terryware.net'
+    from: process.env.NODEMAILER_EMAIL
+    to: process.env.NODEMAILER_EMAIL
     subject: req.body.subject || 'inquiries'
     text: text
     (err, info) ->
