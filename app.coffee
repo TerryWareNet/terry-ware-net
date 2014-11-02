@@ -26,7 +26,7 @@ app.post '/email', (req, res, next) ->
 
   transporter.sendMail
     from: process.env.NODEMAILER_EMAIL
-    to: process.env.NODEMAILER_EMAIL
+    to: process.env.NODEMAILER_TO_EMAIL || process.env.NODEMAILER_EMAIL
     subject: req.body.subject || 'inquiries'
     text: text
     (err, info) ->
