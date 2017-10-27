@@ -48,6 +48,12 @@ html, body {
 	right: 0px;
 	bottom: 0px;
 }
+#footer > p {
+	text-align: right;
+	font-size: x-small;
+	font-family: arial;
+	color: #ccc;
+}
 a:link {
 	text-decoration: none;
 	color: #666666;
